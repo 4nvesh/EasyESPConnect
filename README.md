@@ -2,7 +2,7 @@
 ![Platform](https://img.shields.io/badge/Platform-ESP32-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Framework](https://img.shields.io/badge/Framework-Arduino-orange.svg)
-![Version](https://img.shields.io/badge/Version-1.1.0-red.svg)
+![Version](https://img.shields.io/badge/Version-1.1.1-red.svg)
 
 # EasyESPConnect -- ESP32 WiFi Manager (NVS Based, Lightweight)
 
