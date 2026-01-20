@@ -8,14 +8,14 @@
 #include <ESPmDNS.h>
 
 // Comment this line to remove all Serial debugging and save Flash/RAM
-//#define EASY_ESP_DEBUG 
+#define EASY_ESP_DEBUG 
 
 class EasyESPConnect {
 public:
     EasyESPConnect(uint8_t resetPin = 27);
 
     // Optimized with const String& to save RAM
-    void setCustomUI(const String& title, const String& token, const String& themeColor = "#DFECEA");
+    void setCustomUI(const String& title, const String& token, const String& themeColour);
     
     void begin(const char* apName = "EasyESP-Config");
     void loop();
@@ -30,7 +30,7 @@ private:
 
     String _uiTitle = "EasyESP Connect";
     String _uiToken = "1xTARS1HA26AP2";
-    String _uiColor = "#DFECEA";
+    String _uiColour = "#DFECEA";
 
     WebServer _server;
     DNSServer _dnsServer;
