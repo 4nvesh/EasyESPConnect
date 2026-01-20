@@ -63,7 +63,7 @@ void EasyESPConnect::_setupCaptivePortal() {
     _server.on("/", [this]() { _handleRoot(); });
     _server.on("/scan", [this]() { _handleScan(); });
     _server.on("/save", HTTP_POST, [this]() {
-        _saveCredentials(_server.arg("ssid"), _server.arg("pass"));
+        _saveCredentials(_server.arg("ssid"), _server.arg("password"));
         _server.send(200, "text/html", success_html);
         delay(2000);
         ESP.restart();
