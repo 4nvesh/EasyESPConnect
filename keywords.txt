@@ -1,0 +1,21 @@
+#######################################
+# Syntax Coloring Map For EasyESPConnect
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+EasyESPConnect	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+begin	KEYWORD2
+loop	KEYWORD2
+resetSettings	KEYWORD2
+setCustomUI	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+EASY_ESP_DEBUG	LITERAL1
