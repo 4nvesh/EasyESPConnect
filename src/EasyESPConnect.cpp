@@ -14,10 +14,10 @@ void EasyESPConnect::log(const String& msg, bool newLine) {
 #endif
 }
 
-void EasyESPConnect::setCustomUI(const String& title, const String& token, const String& themeColor) {
+void EasyESPConnect::setCustomUI(const String& title, const String& token, const String& themeColour) {
     if (title.length() > 0) _uiTitle = title;
     if (token.length() > 0) _uiToken = token;
-    if (themeColor.length() > 0) _uiColor = themeColor;
+    if (themeColour.length() > 0) _uiColour = themeColour;
 }
 
 void EasyESPConnect::begin(const char* apName) {
@@ -76,7 +76,7 @@ void EasyESPConnect::_handleRoot() {
     String html = index_html;
     html.replace(F("%TITLE%"), _uiTitle);
     html.replace(F("%TOKEN%"), _uiToken);
-    html.replace(F("%COLOR%"), _uiColor);
+    html.replace(F("%THEME_COLOUR%"), _uiColour);
     _server.sendHeader(F("Cache-Control"), F("no-cache"));
     _server.send(200, "text/html", html);
 }
